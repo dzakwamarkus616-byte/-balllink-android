@@ -9,13 +9,22 @@ jobs:
         with:
           distribution: temurin
           java-version: '17'
-      - name: Make gradle executable
-        working-directory: android-balllink
-        run: chmod +x gradlew
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+      - name: Install and Build Web
+        run: |
+          npm install
+          npm run build
+          npx cap sync android || true
       - name: Build APK
         working-directory: android-balllink
-        run: ./gradlew assembleRelease
+        run: |
+          chmod +x gradlew
+         ./gradlew assembleRelease --stacktrace
       - name: Upload APK
+        if: success()
         uses: actions/upload-artifact@v4
         with:
           name: balllink-apk
