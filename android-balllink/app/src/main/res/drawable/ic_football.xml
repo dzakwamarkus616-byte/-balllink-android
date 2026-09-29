@@ -1,0 +1,90 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="120dp"
+    android:height="120dp"
+    android:viewportWidth="120"
+    android:viewportHeight="120">
+    <!-- Outer Ball Circle Base -->
+    <path
+        android:fillColor="#16a34a"
+        android:pathData="M60,60m-54,0a54,54 0,1 1,108 0a54,54 0,1 1,-108 0" />
+    
+    <!-- White outer rim / glow -->
+    <path
+        android:strokeColor="#FFFFFF"
+        android:strokeWidth="3"
+        android:pathData="M60,60m-52,0a52,52 0,1 1,104 0a52,52 0,1 1,-104 0" />
+
+    <!-- Central Pentagon (Dark Slate / Football Patch) -->
+    <path
+        android:fillColor="#0f172a"
+        android:pathData="M60,40 L76,51 L70,70 L50,70 L44,51 Z" />
+
+    <!-- Pentagon connecting seam lines -->
+    <!-- Top vertex line to top patch -->
+    <path
+        android:strokeColor="#0f172a"
+        android:strokeWidth="3.5"
+        android:strokeLineCap="round"
+        android:pathData="M60,40 L60,18" />
+    
+    <!-- Top-Right vertex line -->
+    <path
+        android:strokeColor="#0f172a"
+        android:strokeWidth="3.5"
+        android:strokeLineCap="round"
+        android:pathData="M76,51 L95,44" />
+        
+    <!-- Bottom-Right vertex line -->
+    <path
+        android:strokeColor="#0f172a"
+        android:strokeWidth="3.5"
+        android:strokeLineCap="round"
+        android:pathData="M70,70 L83,88" />
+        
+    <!-- Bottom-Left vertex line -->
+    <path
+        android:strokeColor="#0f172a"
+        android:strokeWidth="3.5"
+        android:strokeLineCap="round"
+        android:pathData="M50,70 L37,88" />
+        
+    <!-- Top-Left vertex line -->
+    <path
+        android:strokeColor="#0f172a"
+        android:strokeWidth="3.5"
+        android:strokeLineCap="round"
+        android:pathData="M44,51 L25,44" />
+
+    <!-- Outer perimeter patches -->
+    <!-- Top patch -->
+    <path
+        android:fillColor="#0f172a"
+        android:pathData="M49,11 L60,18 L71,11 L68,7 A54,54 0 0,0 52,7 Z" />
+    <!-- Top right patch -->
+    <path
+        android:fillColor="#0f172a"
+        android:pathData="M95,44 L103,32 A54,54 0 0,0 95,21 L85,28 Z" />
+    <!-- Bottom right patch -->
+    <path
+        android:fillColor="#0f172a"
+        android:pathData="M83,88 L98,82 A54,54 0 0,0 108,68 L98,62 Z" />
+    <!-- Bottom patch -->
+    <path
+        android:fillColor="#0f172a"
+        android:pathData="M37,88 L50,100 L70,100 L83,88 L70,95 L50,95 Z" />
+    <!-- Bottom left patch -->
+    <path
+        android:fillColor="#0f172a"
+        android:pathData="M22,62 L12,68 A54,54 0 0,0 22,82 L37,88 Z" />
+    <!-- Top left patch -->
+    <path
+        android:fillColor="#0f172a"
+        android:pathData="M25,44 L35,28 L25,21 A54,54 0 0,0 17,32 Z" />
+
+    <!-- Subtle Green Highlight Arc -->
+    <path
+        android:strokeColor="#22c55e"
+        android:strokeWidth="2.5"
+        android:strokeLineCap="round"
+        android:pathData="M30,30 A45,45 0 0,1 60,15" />
+</vector>

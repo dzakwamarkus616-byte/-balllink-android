@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">BallLink</string>
+    <string name="app_tagline">Football Talent Connect</string>
+    <string name="error_offline_title">No Internet Connection</string>
+    <string name="error_offline_message">Please check your network settings and tap retry to reconnect to BallLink.</string>
+    <string name="btn_retry">Retry Connection</string>
+    <string name="file_chooser_title">Select file or media</string>
+</resources>

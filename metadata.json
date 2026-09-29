@@ -1,0 +1,6 @@
+{
+  "name": "BallLink Android App Builder & Simulator",
+  "description": "Native Android app project for BallLink - Football Talent Connect with Kotlin WebView, file upload support, native splash screen, and one-click ZIP download.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

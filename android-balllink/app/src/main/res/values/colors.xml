@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Brand colors from specification -->
+    <color name="brand_green">#16a34a</color>
+    <color name="brand_green_dark">#15803d</color>
+    <color name="brand_green_light">#22c55e</color>
+    <color name="brand_green_subtle">#10b981</color>
+    
+    <!-- Dark Theme Backgrounds -->
+    <color name="dark_background">#0f172a</color>
+    <color name="dark_surface">#1e293b</color>
+    <color name="dark_border">#334155</color>
+    
+    <!-- Text and Highlights -->
+    <color name="text_primary">#f8fafc</color>
+    <color name="text_secondary">#94a3b8</color>
+    <color name="text_muted">#64748b</color>
+    
+    <!-- System -->
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="status_bar_color">#0f172a</color>
+    <color name="nav_bar_color">#0f172a</color>
+</resources>
