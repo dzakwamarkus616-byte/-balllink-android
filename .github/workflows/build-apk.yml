@@ -9,11 +9,12 @@ jobs:
         with:
           distribution: temurin
           java-version: '17'
+      - name: Make gradle executable
+        working-directory: android-balllink
+        run: chmod +x gradlew
       - name: Build APK
         working-directory: android-balllink
-        run: |
-          chmod +x gradlew
-         ./gradlew assembleRelease
+        run: ./gradlew assembleRelease
       - name: Upload APK
         uses: actions/upload-artifact@v4
         with:
