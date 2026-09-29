@@ -12,7 +12,9 @@ jobs:
       - name: Make executable
         run: chmod +x android-balllink/gradlew
       - name: Build APK
-        run: cd android-balllink &&./gradlew assembleRelease
+        run: |
+          cd android-balllink
+         ./gradlew assembleRelease
       - name: Upload APK
         uses: actions/upload-artifact@v4
         with:
